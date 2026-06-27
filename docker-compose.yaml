@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  asterisk:
+    image: andrius/asterisk:22
+    container_name: asterisk
+    restart: unless-stopped
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - SYS_NICE
+    environment:
+      TZ: Asia/Shanghai
+    volumes:
+      - ./config:/etc/asterisk
+      - ./logs:/var/log/asterisk
+      - ./sounds:/var/lib/asterisk/sounds
