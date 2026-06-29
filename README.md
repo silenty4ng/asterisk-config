@@ -19,12 +19,12 @@
 
 ## BIND9 ENUM 记录
 ```
-*       IN NAPTR 10 100 "U" "E2U+sip" "!^(.*)$!sip:\\1@sip.example.dn42!" .
-*.*     IN NAPTR 10 100 "U" "E2U+sip" "!^(.*)$!sip:\\1@sip.example.dn42!" .
-*.*.*   IN NAPTR 10 100 "U" "E2U+sip" "!^(.*)$!sip:\\1@sip.example.dn42!" .
-*.*.*.* IN NAPTR 10 100 "U" "E2U+sip" "!^(.*)$!sip:\\1@sip.example.dn42!" .
+*       IN NAPTR 10 100 "U" "E2U+sip" "!^(.*)$!sip:\\1@pbx.example.dn42!" .
+*.*     IN NAPTR 10 100 "U" "E2U+sip" "!^(.*)$!sip:\\1@pbx.example.dn42!" .
+*.*.*   IN NAPTR 10 100 "U" "E2U+sip" "!^(.*)$!sip:\\1@pbx.example.dn42!" .
+*.*.*.* IN NAPTR 10 100 "U" "E2U+sip" "!^(.*)$!sip:\\1@pbx.example.dn42!" .
 ```
-修改 sip.example.dn42 为您的 PBX 域名。
+修改 pbx.example.dn42 为您的 PBX 域名。
 
 ## 运行
 ```
